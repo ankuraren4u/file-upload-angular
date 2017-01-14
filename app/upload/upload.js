@@ -21,7 +21,7 @@ angular.module('myApp.upload', ['ngRoute'])
         }).then(function (response) {
           if (response.data.status == 'ready') {
             $scope.status = null;
-            $scope.url = $sce.trustAsResourceUrl('http://fast.wistia.net/embed/iframe/' + hashId);
+            $scope.url = $sce.trustAsResourceUrl('https://fast.wistia.net/embed/iframe/' + hashId);
             $scope.loaded = true;
             $scope.progress = null;
            // $scope.$apply();
